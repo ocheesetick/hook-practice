@@ -1,3 +1,6 @@
 @tailwind base;
+body {
+    @apply bg-black min-h-screen
+  }
 @tailwind components;
 @tailwind utilities;

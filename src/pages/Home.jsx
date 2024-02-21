@@ -1,9 +1,13 @@
 import React from 'react'
+import UseState from '../components/UseState'
 
 const Home = () => {
   return (
-    <div className='bg-slate-900'>
-    Home
+    <div className='p-4 flex'>
+      <div className="p-2 bg-yellow-950">
+        <UseState />
+      </div>
+      
     </div>
   )
 }
