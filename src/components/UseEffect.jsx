@@ -24,7 +24,7 @@ const UseEffect = () => {
 
             {/* Add 1 from count */}
             <button
-                className="p-4 font-bold bg-yellow-400 rounded-lg"
+                className="p-4 font-bold bg-red-400 rounded-lg"
                 onClick={() => setCount(count + 1)}
             >
                 Trigger

@@ -9,7 +9,7 @@ const Home = () => {
       <div className="p-2 bg-yellow-950">
         <UseState  />
       </div>
-      <div className="p-2 bg-yellow-950">
+      <div className="p-2 bg-red-950">
         <UseEffect />
       </div>
     </div>
