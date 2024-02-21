@@ -1,6 +1,7 @@
 import { React } from 'react'
 import UseState from '../components/UseState'
 import UseEffect from '../components/UseEffect'
+import UseMemo from '../components/useMemo/UseMemo'
 
 const Home = () => {
 
@@ -12,6 +13,10 @@ const Home = () => {
       <div className="p-2 bg-red-950">
         <UseEffect />
       </div>
+      <div className="p-2 bg-lime-950">
+        <UseMemo />
+      </div>
+      
     </div>
   )
 }
