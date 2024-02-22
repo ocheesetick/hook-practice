@@ -2,6 +2,7 @@ import { React } from 'react'
 import UseState from '../components/UseState'
 import UseEffect from '../components/UseEffect'
 import UseMemo from '../components/useMemo/UseMemo'
+import UseCallBack from '../components/useCallBack/UseCallBack'
 
 const Home = () => {
 
@@ -16,7 +17,9 @@ const Home = () => {
       <div className="p-2 bg-lime-950">
         <UseMemo />
       </div>
-      
+      <div className="p-2 bg-sky-950">
+        <UseCallBack />
+      </div>
     </div>
   )
 }
