@@ -24,9 +24,11 @@ const UseCallBack = () => {
     }, []); // Dependency array. Which changes will it watch.
 
     return (
-        <div className="p-4 grid grid-cols-2 gap-2">
-        <span className="col-span-2 text-white font-bold">UseCallBack</span>
-            <div className="grid grid-cols-2 gap-4 col-span-2">
+        <div className="grid grid-rows-3 gap-2 p-4">
+
+            <span className="text-white font-bold">UseCallBack</span>
+
+            <div className="grid grid-cols-2 gap-4 ">
                 <button
                     className="p-4 font-bold bg-sky-400 rounded-lg col-span-1"
                     onClick={() => handleShuffle(users)}
@@ -35,18 +37,24 @@ const UseCallBack = () => {
                 </button>
                 <Search className="col-span-1" onChange={handleSearch} />
             </div>
-            <ul className="col-span-1 text-white">
-                {users.map((user) => (
-                    <li key={user}>{user}</li>
-                ))}
-            </ul>
+
+            <div className="grid grid-col-5 grid-flow-col  text-white justify-items-center content-center">
+                    {users.map((user) => (
+                        <div 
+                            className="p-2 font-sans text-xs font-bold text-white uppercase bg-gray-900 rounded-lg" 
+                            key={user}
+                        >
+                            {user}
+                        </div>
+                    ))}
+            </div>
         </div>
     );
 };
 
 export default UseCallBack;
 
-/*
+/*user + "," ? users.length-1 !== index : user
     useCallBack
     - is a hook that wraps your function and return a new function that
     is memoized. A new function that is frozen, and identical EVERYTHING in it across renders
