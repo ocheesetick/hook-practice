@@ -8,7 +8,6 @@ const UseEffect = () => {
     useEffect(() => {
         // Some code to run
         setMessage("useEffect Triggered: " + count)
-        console.log("Count: ", count)
 
         // Return function is optional. Triggered before destroyed.
         return () => {
