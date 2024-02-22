@@ -3,6 +3,7 @@ import UseState from '../components/UseState'
 import UseEffect from '../components/UseEffect'
 import UseMemo from '../components/useMemo/UseMemo'
 import UseCallBack from '../components/useCallBack/UseCallBack'
+import UseContext from '../components/useContext/UseContext'
 
 const Home = () => {
 
@@ -19,6 +20,9 @@ const Home = () => {
       </div>
       <div className="p-2 bg-sky-950">
         <UseCallBack />
+      </div>
+      <div className="p-2 bg-violet-950">
+        <UseContext />
       </div>
     </div>
   )
