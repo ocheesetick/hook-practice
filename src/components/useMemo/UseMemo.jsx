@@ -20,8 +20,9 @@ const UseMemo = () => {
 
     return (
         <div className='p-4 grid grid-cols-1 gap-2'>
-            <h1 className="text-white font-medium col-span-1">Count: {count}</h1>
-            <h1 className="text-white font-medium col-span-1">useMemo Selected Item: {selectedItem?.id}</h1>
+            <div className="text-white font-bold col-span-1 border-solid border-2 border-lime-400 rounded-lg p-2">UseMemo</div>
+            <span className="text-white font-medium col-span-1">Count: {count}</span>
+            <span className="text-white font-medium col-span-1">Selected Item: {selectedItem?.id}</span>
             <button
                 className='p-4 font-bold bg-lime-400 rounded-lg col-span-1'
                 onClick={() => setCount(count+1) }>

@@ -24,9 +24,9 @@ const UseCallBack = () => {
     }, []); // Dependency array. Which changes will it watch.
 
     return (
-        <div className="grid grid-rows-3 gap-2 p-4">
+        <div className="grid grid-cols-1 gap-4 p-4">
 
-            <span className="text-white font-bold">UseCallBack</span>
+            <div className="text-white font-bold border-solid border-2 border-sky-400 rounded-lg p-2">UseCallBack</div>
 
             <div className="grid grid-cols-2 gap-4 ">
                 <button

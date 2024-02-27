@@ -7,7 +7,7 @@ const UseEffect = () => {
     // Is guaranteed to run at least once when component is mounted
     useEffect(() => {
         // Some code to run
-        setMessage("useEffect Triggered: " + count)
+        setMessage("Triggered: " + count)
 
         // Return function is optional. Triggered before destroyed.
         return () => {
@@ -17,9 +17,10 @@ const UseEffect = () => {
 
     return (
         <div className="p-4 grid grid-cols-1 gap-2">
-            <h1 className="text-white font-medium col-span-2">
+            <span className="text-white font-bold col-span-1 border-solid border-2 border-red-400 rounded-lg p-2">UseEffect</span>
+            <span className="text-white font-medium col-span-1">
                 {message}
-            </h1>
+            </span>
 
             {/* Add 1 from count */}
             <button
