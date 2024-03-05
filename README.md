@@ -1,3 +1,7 @@
+# Notes
+-  This is to help developers or aspiring developers to know or review the 
+different common react hooks and its use cases
+
 # Initial Setup Vite + React
 - first create a folder where you want to create your React app
 - open it on your preferred IDE then open terminal in that directory
